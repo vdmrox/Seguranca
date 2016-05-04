@@ -25,10 +25,10 @@ public class Role implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name="CD_CODIGO")
+	@Column(name="CD_ROLE")
 	private Integer codigo;
 	
-	@Column(name="NM_ROLE",length=60)
+	@Column(name="NM_ROLE",length=60,unique=true)
 	private String nome;
 	
 	@ManyToMany

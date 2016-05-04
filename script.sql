@@ -12,12 +12,12 @@ values ('carloseduardo',1,'carloseduardodantas@iftm.edu.br','e4UXW0VQYOMjfpJfAjB
        -- 123
        
 insert into tb_role(nm_role,cd_sistema)
-values ('admin',1),
-       ('cadastro',1),
-       ('consulta',1),
-       ('admin',2),
-       ('cadastro',2),
-       ('consulta',2);
+values ('ECO_admin',1),
+       ('ECO_cadastro',1),
+       ('ECO_consulta',1),
+       ('SEG_admin',2),
+       ('SEG_cadastro',2),
+       ('SEG_consulta',2);
        
 insert into tb_usuario_role(cd_role,ds_login)
 values (1,'bruno'),
