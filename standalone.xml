@@ -150,7 +150,21 @@
                     <connection-url>jdbc:mysql://localhost:3306/dbEcommerce</connection-url>
                     <driver>mysql</driver>
                     <pool>
+                        <min-pool-size>5</min-pool-size>
                         <max-pool-size>30</max-pool-size>
+                        <prefill>true</prefill>
+                    </pool>
+                    <security>
+                        <user-name>root</user-name>
+                    </security>
+                </datasource>
+				<datasource jndi-name="java:jboss/datasources/SEGURANCADS" pool-name="SEGURANCADS" enabled="true" use-java-context="true">
+                    <connection-url>jdbc:mysql://localhost:3306/dbSeguranca</connection-url>
+                    <driver>mysql</driver>
+                    <pool>
+                        <min-pool-size>5</min-pool-size>
+                        <max-pool-size>30</max-pool-size>
+                        <prefill>true</prefill>
                     </pool>
                     <security>
                         <user-name>root</user-name>
@@ -336,8 +350,7 @@
 					value="base64"/>
 					</login-module>
 					</authentication>
-				</security-domain>
-				
+				</security-domain>				
                 <security-domain name="jboss-web-policy" cache-type="default">
                     <authorization>
                         <policy-module code="Delegating" flag="required"/>
