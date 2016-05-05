@@ -343,7 +343,7 @@
 					value="SELECT NM_ROLE, 'Roles'
 						   FROM TB_ROLE R,TB_USUARIO_ROLE UR
 						   WHERE R.CD_ROLE = UR.CD_ROLE
-							AND UR.CD_USUARIO=?"/>
+							AND UR.DS_LOGIN=?"/>
 					<module-option name="hashAlgorithm"
 					value="SHA-256"/>
 					<module-option name="hashEncoding"
@@ -379,6 +379,7 @@
                     <location name="/" handler="welcome-content"/>
                     <filter-ref name="server-header"/>
                     <filter-ref name="x-powered-by-header"/>
+					<single-sign-on path="/" />
                 </host>
             </server>
             <servlet-container name="default">
