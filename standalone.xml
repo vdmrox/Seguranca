@@ -146,6 +146,19 @@
                         <password>sa</password>
                     </security>
                 </datasource>
+                <datasource jndi-name="java:jboss/datasources/CUPCAKEDS" pool-name="CUPCAKEDS" enabled="true" use-java-context="true">
+                    <connection-url>jdbc:mysql://localhost:3306/dbCupcakeStore</connection-url>
+                    <driver>mysql</driver>
+                    <pool>
+                        <min-pool-size>5</min-pool-size>
+                        <max-pool-size>30</max-pool-size>
+                        <prefill>true</prefill>
+                    </pool>
+                    <security>
+                        <user-name>root</user-name>
+                        <password>root</password>
+                    </security>
+                </datasource>
                 <datasource jndi-name="java:jboss/datasources/ECOMMERCEDS" pool-name="ECOMMERCEDS" enabled="true" use-java-context="true">
                     <connection-url>jdbc:mysql://localhost:3306/dbEcommerce</connection-url>
                     <driver>mysql</driver>
@@ -156,6 +169,7 @@
                     </pool>
                     <security>
                         <user-name>root</user-name>
+                        <password>root</password>
                     </security>
                 </datasource>
 				<datasource jndi-name="java:jboss/datasources/SEGURANCADS" pool-name="SEGURANCADS" enabled="true" use-java-context="true">
@@ -168,6 +182,7 @@
                     </pool>
                     <security>
                         <user-name>root</user-name>
+                        <password>root</password>
                     </security>
                 </datasource>
                 <drivers>

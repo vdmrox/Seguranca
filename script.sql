@@ -6,7 +6,8 @@ values ('Sistema Ecommerce','http://localhost:8080/SistemaEcommerce/'),
 
 insert into tb_usuario(ds_login,fl_ativo,ds_email,ds_senha)
 values ('carloseduardo',1,'carloseduardodantas@iftm.edu.br','e4UXW0VQYOMjfpJfAjBTypUV6Ggqg8iwmRHHJKH4t18='),
-       ('bruno',1,'bruno@iftm.edu.br','pmWkWSBCL51Bfkhn79xPuKBKHz//H6B+mY6G9/eieuM=');
+       ('bruno',1,'bruno@iftm.edu.br','pmWkWSBCL51Bfkhn79xPuKBKHz//H6B+mY6G9/eieuM='),
+       ('vdmrox',1,'vdmrox@gmail.com','e4UXW0VQYOMjfpJfAjBTypUV6Ggqg8iwmRHHJKH4t18=');
        
        -- carlos
        -- 123
@@ -25,4 +26,5 @@ values (1,'bruno'),
        (3,'carloseduardo'),
        (6,'carloseduardo'); 
        
-	   
+
+select * from tb_usuario;
